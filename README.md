@@ -1,19 +1,52 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# demopkg
+# IDEEA.dev <img src="man/figures/logo.png" align="right"/>
 
+\[development version of IDEEA model R-package and manual\]
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/IDEEA.dev)](https://CRAN.R-project.org/package=IDEEA.dev)
+
 <!-- badges: end -->
 
-The goal of demopkg is to …
+## About
+
+Indian Zero Carbon Energy Pathways (IDEEA) is a collaborative open
+energy modeling initiative between [Environmental Defense
+Fund](www.edf.org), [Global Change Programme, Jadavpur
+University](http://juglobalchangeprogram.org/gcp/), and [Indian
+Institute of Science, Energy Transition Group](https://iisc.ac.in/) to
+develop tools and scenarios of India’s energy transition. The project
+aims evaluation a broad set of scenarios with high penetration of
+variable renewables and identify a set of most cost-efficient options of
+deep decarbonization and carbon neutrality for India for broad public
+discussion.
+
+## IDEEA models
+
+Decarbonization of electricity is a critical milestone of the energy
+transition to low/zero emissions. Wind and solar energy are the most
+sustainable options of decarbonization, and the recent reduction of
+costs makes them the first options to consider. However, the variability
+of the energy sources requires explicit modeling and evaluation of
+alternative balancing options, such as hydro energy, energy storage,
+grid, back-up capacity, and responsive demand. IDEEA project aims to
+develop a “new” or “renewables era” modeling framework for India to
+evaluate high-VER scenarios based on high temporal and spatial
+resolution.
 
 ## Installation
 
-You can install the development version of demopkg like so:
+You can install the development version of IDEEA.dev from
+[GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("ideea-model/IDEEA.dev")
 ```
 
 ## Example
@@ -21,30 +54,6 @@ You can install the development version of demopkg like so:
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(demopkg)
+library(IDEEA.dev)
 ## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
