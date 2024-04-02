@@ -23,3 +23,7 @@ Depends:
 LazyData: true
 URL: https://github.com/ankitsharmaMCET/demopkg
 BugReports: https://github.com/ankitsharmaMCET/demopkg/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

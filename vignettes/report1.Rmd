@@ -1,0 +1,27 @@
+---
+title: "report1"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{report1}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(demopkg)
+```
+
+```{r}
+Speed <- cars$speed
+Distance <- cars$dist
+plot(Speed, Distance, panel.first = grid(8, 8),
+     pch = 0, cex = 1.2, col = "blue")
+```
+
